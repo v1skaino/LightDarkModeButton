@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DarkLight</title>
+</head>
+<body>
+    <nav>
+        <h1>Light/Dark</h1>
+    </nav>
+    <main>
+        <div>
+            <h2>Dark and Light Mode</h2>
+            <p>Botão de light/dark mode que utiliza CSS Variables e JS básico para alternar a cor da página ao clicar no botão Toggle Mode...Experimente você mesmo</p>
+            <button>Toggle Mode</button>
+        </div>
+    </main>
+    <script>
+        var root = document.querySelector(':root');
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+            root.classList.toggle('light');
+            root.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

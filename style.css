@@ -1,0 +1,108 @@
+:root.light{
+    --base-color-2: #fff;
+    --primary-color: rgb(212, 207, 207);
+    --highlight-color: black;
+    --invert-color: #000;
+    --body-text: Arial, Helvetica, sans-serif;
+    --shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+}
+
+:root.dark{
+    --base-color-2: black;
+    --primary-color: rgb(22, 22, 22);
+    --highlight-color: #fff;
+    --invert-color: #fff;
+    --body-text: Arial, Helvetica, sans-serif;
+    --shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+}
+
+
+
+body{
+    background: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-text);
+}
+
+nav{
+    margin-top: 50px;
+    width: 100vw;
+    height: 80px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: var(--body-text);
+    color: var(--invert-color);
+    font-size: 70px;
+    padding: 20px;
+    border-bottom: 2px solid;
+    border-color: var(--invert-color);
+}
+
+h2, p{
+    color: var(--invert-color);
+}
+
+nav h1{
+    margin: 0;
+}
+
+main{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    background: var(--base-color-2);
+    padding: 60px;
+    box-shadow: var(--shadow);
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 32px;
+    font-size: 18px;
+    height: 48px;
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+    font-family: Courier New;
+    background: var(--base-color-2);
+    color: var(--highlight-color);
+}
+
+button:hover{
+    background-color: var(--highlight-color);
+    color: var(--base-color-2);
+    border: 2px solid;
+    border-color: var(--invert-color);
+}
+
+@media screen and (min-width: 0px) and (max-width: 630px) {
+	main{
+        width: 40%;
+        height: 100%;
+        margin-top: 40px;
+    }
+    button{
+        padding: 0 20px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (min-width: 630px) and (max-width: 745px) {
+	main{
+        width: 70%;
+        height: 100%;
+    }
+    button{
+        padding: 0 20px;
+    }
+}
