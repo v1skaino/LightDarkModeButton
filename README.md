@@ -1,0 +1,2 @@
+<h1 align="center">Botão de Dark and Light mode<h1>
+<h3>Esse botão foi criado como meio de estudo do CSS Variables, ele possibilita a alteração de todo o tema da página com apenas um 'click'. Utiliza-se um script bem básico e de maneira geral é um arquivo básico, porém que serve como uma boa base de estudo, pois é possível perceber como o CSS Variables pode ser útil para modificar de maneira bem rápida o layout de um site inteiro.<h3>
